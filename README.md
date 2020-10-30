@@ -10,10 +10,27 @@
 - /api/v1/login (Registered user can login.)
 ```
 
+## JSON DATA FORMAT
+```
+{
+    "name": "Faysal",
+    "email": "fmehedi1992@gmail.com",
+    "password": "testpass123",
+    "admin": "True"
+}
+
+```
+## JSON WEB TOKEN SAMPLE
+```
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImV4cCI6MTYwNDA2MTU3OX0.fn5ZaswE4VmbbtuIP76caIXKDcpGlD467YA1BiV4ilA"
+}
+```
+
 ## For Database Running
 
 ```
-$ sudo docker-compose up -d -t auth_db
+$ sudo docker-compose up -d
 $ sudo docker-compose ps
 ```
 
